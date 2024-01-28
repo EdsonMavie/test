@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 80px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        h1, h2, p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .folder-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .artwork {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 250px;
+        }
+
+        .artwork img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .artwork h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .contact-btn {
+            background-color: #5c1cf1;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            margin: 20px;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .whatsapp-link {
+            color: #25d366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #contactForm {
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #contactForm h2 {
+            margin-bottom: 20px;
+        }
+
+        .folder-link {
+            color: #6d3ddd;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+         /* Novo estilo para a assinatura */
+         #edsonMavieSignature {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #030205;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Anastácia Simbine - Galeria de Arte</title>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo Anastácia Simbine">
+        <h1>TacyArtes</h1>
+        <p>Sua Galeria de Arte Online</p>
+        <p>Artes Plásticas & Personalizados de Luxo</p>
+    </header>
+
+    <nav>
+        <!-- Links para "pastas" -->
+        <a class="folder-link" href="Pasta1.html">Artes Plásticas</a>
+        <a class="folder-link" href="Pasta2.html">Desenhos Realisticos</a>
+        <!-- <a class="folder-link" href="#folder3">Pasta 3</a> -->
+    </nav>
+
+    <!-- Seção para "Pasta 1" -->
+    <section id="folder1">
+        <h2>Desenhos Realisticos Personalizados</h2>
+        
+        <div class="gallery">
+            <div class="artwork">
+                <img src="Desenho/Draw1.jpg" alt="Imagem 1 da Pasta 1">
+                <h2>Imagem 1</h2>
+                <!-- Adicione informações adicionais conforme necessário -->
+            </div>
+
+            <div class="artwork">
+                <img src="Desenho/Draw2.jpg" alt="Imagem 2 da Pasta 1">
+                <h2>Imagem 2</h2>
+                <!-- Adicione informações adicionais conforme necessário -->
+            </div>
+
+            <div class="artwork">
+                <img src="Desenho/Draw3.jpg" alt="Imagem 3 da Pasta 1">
+                <h2>Imagem 3</h2>
+                <!-- Adicione informações adicionais conforme necessário -->
+            </div>
+
+            <div class="artwork">
+                <img src="Desenho/Draw4.jpg" alt="Imagem 4 da Pasta 1">
+                <h2>Imagem 4</h2>
+                <!-- Adicione informações adicionais conforme necessário -->
+            </div>
+            <div class="artwork">
+                <img src="Desenho/Draw5.jpg" alt="Imagem 4 da Pasta 1">
+                <h2>Imagem 4</h2>
+                <!-- Adicione informações adicionais conforme necessário -->
+            </div>
+
+            <!-- Adicione mais imagens conforme necessário -->
+
+        </div>
+    </section>
+
+    <!-- Adicione mais seções para outras pastas conforme necessário -->
+
+    <footer>
+        <a href="https://whats.link/tacyartes" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+            <img src="whatsapp.png" alt="Ícone do WhatsApp">
+            <p>WhatsApp</p>
+        </a>
+    </footer>
+
+    <!-- Formulário de contato -->
+    <div id="contactForm">
+        <h2>Formulário de Contato</h2>
+        <p>Informe seu nome, email e mensagem para requisitar a obra:</p>
+        <form>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit" class="contact-btn">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Assinatura por Edson Mavie -->
+<div id="edsonMavieSignature">Por Edson Mavie</div>
+    <!-- Adicione a função JavaScript para mostrar o formulário de contato -->
+    <script>
+
+        function openContactForm(artworkTitle) {
+            var contactForm = document.getElementById('contactForm');
+            contactForm.style.display = 'block';
+
+            // Preencha automaticamente o assunto do email com
