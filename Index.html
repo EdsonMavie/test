@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            position: relative;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        header img {
+            width: 100px; /* Ajuste conforme necessário */
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .artwork {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .artwork img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .contact-btn {
+            background-color: #5c1cf1;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-form {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        .order-form label {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .order-form input {
+            width: 40%;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .order-form button {
+            background-color: #5c1cf1;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: none;
+            color: rgb(24, 226, 41);
+            text-align: center;
+            padding: 2px;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%; /* Alterado para ocupar toda a largura do viewport */
+            justify-content: center;
+            display: flex;
+            align-items: center; /* Adicionado para centralizar verticalmente */
+        }
+
+        footer a {
+            margin: 20px;
+        }
+
+        footer p {
+            margin-top: 0px;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .whatsapp-link {
+            color: #25d366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #edsonMavie {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            color: #5c1cf1;
+            font-size: 14px;
+        }
+
+        /* Novo estilo para a assinatura */
+        #edsonMavieSignature {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #030205;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        /* Novo estilo para links de "pastas" */
+        .folder-link {
+            color: #5c1cf1;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .contaner {
+            padding: 0px 30px;
+        }
+    </style>
+    <title>Anastácia Simbine - Galeria de Arte</title>
+</head>
+<body>
+<div class="contaner">
+
+        <header>
+            <img src="logo.jpg" alt="Logo Anastácia Simbine">
+            <h1>TacyArtes</h1>
+            <p>Sua Galeria de Arte Online</p>
+            <p>Artes Plásticas & Personalizados de Luxo</p>
+        </header>
+    
+        <nav>
+            <!-- Links para "pastas" -->
+            <a class="folder-link" href="Pasta1.html">Artes Plásticas</a>
+            <a class="folder-link" href="Pasta2.html">Desenhos a lápis</a>
+            <!-- <a class="folder-link" href="#folder3">Pasta 3</a> -->
+        </nav>
+        <p>Olá a todos, o meu nome é Ananstácia Simbine, responsavél por criar todas obras que irá encontar nessa página, espero que se empressione e faça seu pedido. Assim que decidir é só entrar em contacto comigo pelo whatsapp no fundo da página.</p>
+    
+        <div class="gallery">
+            <div class="artwork">
+                <img src="obra1.jpg" alt="Obra 1">
+                <h2>Obra 1</h2>
+                <p>Valor: MZN 1.000,00</p>
+                <p>Código: ABC123</p>
+                <button class="contact-btn" onclick="openContactForm('Obra 1')">Contactar</button>
+            </div>
+    
+            <div class="artwork">
+                <img src="obra2.jpg" alt="Obra 2">
+                <h2>Obra 2</h2>
+                <p>Valor: MZN 800,00</p>
+                <p>Código: XYZ456</p>
+                <button class="contact-btn" onclick="openContactForm('Obra 2')">Contactar</button>
+            </div>
+    
+            <!-- Adicione mais obras conforme necessário -->
+    
+        </div>
+    
+        <div class="order-form">
+            <h2>Faça um Pedido de Desenho</h2>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+    
+                <label for="request">Pedido de Desenho:</label>
+                <textarea id="request" name="request" rows="4" required></textarea><br>
+    
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </div>
+    
+        <footer>
+            <a href="https://whats.link/tacyartes" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                <img src="whatsapp.png" alt="Ícone do WhatsApp">
+                <p>WhatsApp</p>
+            </a>
+        </footer>
+    
+        <!-- Adicione o formulário de contato no final do corpo do HTML -->
+        <div id="contactForm" style="display: none;">
+            <h2>Formulário de Contato</h2>
+            <p>Informe seu nome, email e mensagem para requisitar a obra:</p>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+    
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    
+        <!-- Adicione a função JavaScript para mostrar o formulário de contato -->
+        <script>
+            function openContactForm(artworkTitle) {
+                var contactForm = document.getElementById('contactForm');
+                contactForm.style.display = 'block';
+    
+                // Preencha automaticamente o assunto do email com o título da obra
+                var messageInput = document.getElementById('message');
+                messageInput.value = "Estou interessado na obra: " + artworkTitle;
+            }
+        </script>
+    
+        <!-- Assinatura por Edson Mavie -->
+        <div id="edsonMavieSignature">Por Edson Mavie</div>
+</div>
+
+</body>
+</html>
